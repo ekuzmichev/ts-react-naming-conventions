@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { UserGreeter } from "./classes/UserGreeter";
 import { InfoCard } from "./components/InfoCard";
-import { ArrowDirection } from "./enums/ArrowDirection";
-import { PathDirection } from "./enums/PathDirection";
-import { StringUtils } from "./functions/module/StringUtils";
-import { calculateSum } from "./functions/single/calculateSum";
+import { ArrowDirection } from "./enums/enum-as-const-object/ArrowDirection";
+import { PathDirection } from "./enums/classic-enum/PathDirection";
+import { StringUtils } from "./functions/module-as-const-object/StringUtils";
+import { calculateSum } from "./functions/single-function-in-file/calculateSum";
 import { EmployeeDetails } from "./interfaces/EmployeeDetails";
 import { PetInfo } from "./types/PetInfo";
 
