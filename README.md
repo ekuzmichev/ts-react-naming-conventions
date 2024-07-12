@@ -1,5 +1,3 @@
-# ts-react-naming-conventions
-
 # TypeScript + React Naming Conventions
 
 - TS file with single exported function
