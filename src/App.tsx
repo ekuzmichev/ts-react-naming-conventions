@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { UserGreeter } from "./classes/UserGreeter";
+import { InfoCard } from "./components/InfoCard";
 import { ArrowDirection } from "./enums/ArrowDirection";
 import { PathDirection } from "./enums/PathDirection";
 import { StringUtils } from "./functions/module/StringUtils";
@@ -31,15 +32,21 @@ export const App: FC = () => {
   const pathDirection: PathDirection = PathDirection.Left;
 
   return (
-    <div>
-      <p>Sum of [1, 2, 3]: {sum}</p>
-      <p>'' is empty: {String(empty)}</p>
-      <p>' ' is blank: {String(blank)}</p>
-      <p>User greeting: {userGreeting}</p>
-      <p>Employee details: {JSON.stringify(employeeDetails)}</p>
-      <p>Pet info: {JSON.stringify(petInfo)}</p>
-      <p>Arrow direction: {arrowDirection}</p>
-      <p>Path direction: {pathDirection}</p>
-    </div>
+    <>
+      <hr />
+      <div>
+        <p>Sum of [1, 2, 3]: {sum}</p>
+        <p>'' is empty: {String(empty)}</p>
+        <p>' ' is blank: {String(blank)}</p>
+        <p>User greeting: {userGreeting}</p>
+        <p>Employee details: {JSON.stringify(employeeDetails)}</p>
+        <p>Pet info: {JSON.stringify(petInfo)}</p>
+        <p>Arrow direction: {arrowDirection}</p>
+        <p>Path direction: {pathDirection}</p>
+      </div>
+      <hr />
+      <InfoCard title="Title here" paragraph="Content here" />
+      <hr />
+    </>
   );
 };
